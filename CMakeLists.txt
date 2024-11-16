@@ -3,4 +3,6 @@ project(FileZipper_Project)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(FileZipper_Project main.cpp huffman.cpp)
+add_executable(FileZipper_Project main.cpp huffman.cpp
+        priority_queue.h
+        priority_queue.cpp)

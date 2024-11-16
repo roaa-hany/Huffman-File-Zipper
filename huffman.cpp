@@ -1,7 +1,8 @@
 #include "huffman.h"
 #include <iostream>
 #include <fstream>
-#include <queue>
+#include <vector>
+#include "priority_queue.h"
 #include <bitset>
 #include <stdexcept>
 
@@ -13,17 +14,6 @@ Node::Node(char c, int f) : ch(c), freq(f), left(nullptr), right(nullptr) {}
 bool Compare::operator()(Node* a, Node* b) {
     return a->freq > b->freq;
 }
-
-//long getfilesize(string& inputfile) {
-//  ifstream file(inputfile, ios::binary | ios::ate);
-//  if (!file.is_open()) {
-//      cerr << "Error calculating the size of the file." << endl;
-//      return -1;
-//  }
-//  long size = file.tellg();
-//  file.close();
-//  return size;
-//}
 
 unordered_map<char, int> buildFrequencyMap(const string& filename) {
     unordered_map<char, int> freqMap;
@@ -76,8 +66,10 @@ void buildCodeMap(Node* root, const string& code, unordered_map<char, string>& c
 void writeCompressedFile(const string& inputFile, const string& outputFile) {
     ifstream inFile(inputFile, ios::binary);
     ofstream outFile(outputFile, ios::binary);
+
     unordered_map<char, int> freqMap = buildFrequencyMap(inputFile);
     Node* huffmanTree = buildHuffmanTree(freqMap);
+
     unordered_map<char, string> codeMap;
     buildCodeMap(huffmanTree, "", codeMap);
 
@@ -152,4 +144,3 @@ void decompressFile(const string& compressedFile, const string& outputFile) {
     inFile.close();
     outFile.close();
 }
-

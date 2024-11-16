@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\cLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\cLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Fall 2024\Applied Data Srtuctures\Zippers\fall2024-term-project-zippers"
+CMAKE_SOURCE_DIR = "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Fall 2024\Applied Data Srtuctures\Zippers\fall2024-term-project-zippers\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "D:\Fall 2024\Applied Data Srtuctures\Zippers\fall2024-term-p
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"D:\cLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:\cLion\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Fall 2024\Applied Data Srtuctures\Zippers\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" "D:\Fall 2024\Applied Data Srtuctures\Zippers\fall2024-term-project-zippers\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Fall 2024\Applied Data Srtuctures\Zippers\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+priority_queue.obj: priority_queue.cpp.obj
+.PHONY : priority_queue.obj
+
+# target to build an object file
+priority_queue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/priority_queue.cpp.obj
+.PHONY : priority_queue.cpp.obj
+
+priority_queue.i: priority_queue.cpp.i
+.PHONY : priority_queue.i
+
+# target to preprocess a source file
+priority_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/priority_queue.cpp.i
+.PHONY : priority_queue.cpp.i
+
+priority_queue.s: priority_queue.cpp.s
+.PHONY : priority_queue.s
+
+# target to generate assembly for a file
+priority_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/priority_queue.cpp.s
+.PHONY : priority_queue.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... priority_queue.obj
+	@echo ... priority_queue.i
+	@echo ... priority_queue.s
 .PHONY : help
 
 

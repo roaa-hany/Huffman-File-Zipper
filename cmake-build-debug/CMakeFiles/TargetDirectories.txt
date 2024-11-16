@@ -1,0 +1,3 @@
+D:/Uniii/Semester 3/Applied Data Structures/Project/fall2024-term-project-zippers/cmake-build-debug/CMakeFiles/FileZipper_Project.dir
+D:/Uniii/Semester 3/Applied Data Structures/Project/fall2024-term-project-zippers/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Uniii/Semester 3/Applied Data Structures/Project/fall2024-term-project-zippers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
