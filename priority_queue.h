@@ -5,25 +5,46 @@
 #ifndef PRIORITY_QUEUE_H
 #define PRIORITY_QUEUE_H
 
+#include <iostream>
+#include "huffman.h"
+#include <climits>
 using namespace std;
 
-template <typename T>
-class priority_queue {
+struct element {
+    int freq;
+    Node* node;
 
-public:
-    priority_queue(int maxSize);
-    ~priority_queue();
-    void insert(const T& item);
-    T remove();
+    // Default Constructor
+    element() : freq(0), node(nullptr) {}
 
-private:
-    T* array;
-    int maxSize;
-    int lastIndex;
-    T minItem;
-    void upheap(int index);
-    void downheap(int index);
-    void heapify();
+    // Parameterized Constructor
+    element(int f, Node* n) : freq(f), node(n) {}
+
+    // Overload comparison operators for min-heap based on `value`
+    bool operator<(const element& other) const {
+        return freq < other.freq; // Min-heap: smallest value at the top
+    }
+
+    bool operator>(const element& other) const {
+        return freq > other.freq;
+    }
 };
 
-#endif //PRIORITY_QUEUE_H
+class priority_queue {
+public:
+    priority_queue(int maxSize);                  // Constructor
+    ~priority_queue();                            // Destructor
+    void insert(element item);             // Insert element
+    element remove();                             // Remove top element
+    int size();                                   //get the queue size
+
+private:
+    element* array;                                // Array of nodes and frequencies
+    int maxSize;                                   // Max capacity
+    int lastIndex;                                 // Last index of the heap
+    element maxItem;                               // Top element of max-heap
+    void upheap(int index);                        // Maintain heap property upwards
+    void downheap(int index);                      // Maintain heap property downwards
+};
+
+#endif // PRIORITY_QUEUE_H

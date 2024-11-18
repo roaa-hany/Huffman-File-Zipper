@@ -32,23 +32,45 @@ unordered_map<char, int> buildFrequencyMap(const string& filename) {
     return freqMap;
 }
 
+// Node* buildHuffmanTree(const unordered_map<char, int>& freqMap) {
+//     priority_queue<Node*, vector<Node*>> pq;
+//
+//     for (const auto& pair : freqMap) {
+//         pq.insert(new Node(pair.first, pair.second));
+//     }
+//
+//     while (pq.size() > 1) {
+//         Node* left = pq.remove();
+//         Node* right = pq.remove();
+//         Node* parent = new Node('\0', left->freq + right->freq);
+//         parent->left = left;
+//         parent->right = right;
+//         pq.insert(parent);
+//     }
+//
+//     return pq.remove();
+// }
 Node* buildHuffmanTree(const unordered_map<char, int>& freqMap) {
-    priority_queue<Node*, vector<Node*>, Compare> pq;
+
+    priority_queue pq(freqMap.size());
 
     for (const auto& pair : freqMap) {
-        pq.push(new Node(pair.first, pair.second));
+        Node* n = new Node(pair.first, pair.second);
+        pq.insert({pair.second, n});
     }
 
     while (pq.size() > 1) {
-        Node* left = pq.top(); pq.pop();
-        Node* right = pq.top(); pq.pop();
-        Node* parent = new Node('\0', left->freq + right->freq);
-        parent->left = left;
-        parent->right = right;
-        pq.push(parent);
+        auto left = pq.remove();
+        auto right = pq.remove();
+
+        Node* parent = new Node('\0', left.freq + right.freq);
+        parent->left = left.node;
+        parent->right = right.node;
+
+        pq.insert({parent->freq, parent});
     }
 
-    return pq.top();
+    return pq.remove().node;
 }
 
 
