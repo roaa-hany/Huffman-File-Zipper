@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/FileZipper_Project.dir/all
+all: CMakeFiles/fileZipper_.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/FileZipper_Project.dir/clean
+clean: CMakeFiles/fileZipper_.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/FileZipper_Project.dir
+# Target rules for target CMakeFiles/fileZipper_.dir
 
 # All Build rule for target.
-CMakeFiles/FileZipper_Project.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target FileZipper_Project"
-.PHONY : CMakeFiles/FileZipper_Project.dir/all
+CMakeFiles/fileZipper_.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target fileZipper_"
+.PHONY : CMakeFiles/fileZipper_.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/FileZipper_Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/FileZipper_Project.dir/all
+CMakeFiles/fileZipper_.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/fileZipper_.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Uniii\Semester 3\Applied Data Structures\Project\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/FileZipper_Project.dir/rule
+.PHONY : CMakeFiles/fileZipper_.dir/rule
 
 # Convenience name for target.
-FileZipper_Project: CMakeFiles/FileZipper_Project.dir/rule
-.PHONY : FileZipper_Project
+fileZipper_: CMakeFiles/fileZipper_.dir/rule
+.PHONY : fileZipper_
 
 # clean rule for target.
-CMakeFiles/FileZipper_Project.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/clean
-.PHONY : CMakeFiles/FileZipper_Project.dir/clean
+CMakeFiles/fileZipper_.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/clean
+.PHONY : CMakeFiles/fileZipper_.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

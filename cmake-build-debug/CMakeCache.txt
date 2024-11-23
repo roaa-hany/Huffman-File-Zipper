@@ -110,7 +110,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=D:/Uniii/Semester 3/Applied Data Structu
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FileZipper_Project
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/fileZipper_
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/ld.exe
@@ -154,7 +154,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=FileZipper_Project
+CMAKE_PROJECT_NAME:STATIC=fileZipper_
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/ranlib.exe
@@ -240,13 +240,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-FileZipper_Project_BINARY_DIR:STATIC=D:/Uniii/Semester 3/Applied Data Structures/Project/fall2024-term-project-zippers/cmake-build-debug
+fileZipper__BINARY_DIR:STATIC=D:/Uniii/Semester 3/Applied Data Structures/Project/fall2024-term-project-zippers/cmake-build-debug
 
 //Value Computed by CMake
-FileZipper_Project_IS_TOP_LEVEL:STATIC=ON
+fileZipper__IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-FileZipper_Project_SOURCE_DIR:STATIC=D:/Uniii/Semester 3/Applied Data Structures/Project/fall2024-term-project-zippers
+fileZipper__SOURCE_DIR:STATIC=D:/Uniii/Semester 3/Applied Data Structures/Project/fall2024-term-project-zippers
 
 
 ########################

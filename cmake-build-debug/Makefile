@@ -116,48 +116,96 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FileZipper_Project
+# Target rules for targets named fileZipper_
 
 # Build rule for target.
-FileZipper_Project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FileZipper_Project
-.PHONY : FileZipper_Project
+fileZipper_: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 fileZipper_
+.PHONY : fileZipper_
 
 # fast build rule for target.
-FileZipper_Project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/build
-.PHONY : FileZipper_Project/fast
+fileZipper_/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/build
+.PHONY : fileZipper_/fast
 
-huffman.obj: huffman.cpp.obj
-.PHONY : huffman.obj
+FileZipper.obj: FileZipper.cpp.obj
+.PHONY : FileZipper.obj
 
 # target to build an object file
-huffman.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/huffman.cpp.obj
-.PHONY : huffman.cpp.obj
+FileZipper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj
+.PHONY : FileZipper.cpp.obj
 
-huffman.i: huffman.cpp.i
-.PHONY : huffman.i
+FileZipper.i: FileZipper.cpp.i
+.PHONY : FileZipper.i
 
 # target to preprocess a source file
-huffman.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/huffman.cpp.i
-.PHONY : huffman.cpp.i
+FileZipper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/FileZipper.cpp.i
+.PHONY : FileZipper.cpp.i
 
-huffman.s: huffman.cpp.s
-.PHONY : huffman.s
+FileZipper.s: FileZipper.cpp.s
+.PHONY : FileZipper.s
 
 # target to generate assembly for a file
-huffman.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/huffman.cpp.s
-.PHONY : huffman.cpp.s
+FileZipper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/FileZipper.cpp.s
+.PHONY : FileZipper.cpp.s
+
+HuffmanTree.obj: HuffmanTree.cpp.obj
+.PHONY : HuffmanTree.obj
+
+# target to build an object file
+HuffmanTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj
+.PHONY : HuffmanTree.cpp.obj
+
+HuffmanTree.i: HuffmanTree.cpp.i
+.PHONY : HuffmanTree.i
+
+# target to preprocess a source file
+HuffmanTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.i
+.PHONY : HuffmanTree.cpp.i
+
+HuffmanTree.s: HuffmanTree.cpp.s
+.PHONY : HuffmanTree.s
+
+# target to generate assembly for a file
+HuffmanTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.s
+.PHONY : HuffmanTree.cpp.s
+
+LinkedList.obj: LinkedList.cpp.obj
+.PHONY : LinkedList.obj
+
+# target to build an object file
+LinkedList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj
+.PHONY : LinkedList.cpp.obj
+
+LinkedList.i: LinkedList.cpp.i
+.PHONY : LinkedList.i
+
+# target to preprocess a source file
+LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/LinkedList.cpp.i
+.PHONY : LinkedList.cpp.i
+
+LinkedList.s: LinkedList.cpp.s
+.PHONY : LinkedList.s
+
+# target to generate assembly for a file
+LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/LinkedList.cpp.s
+.PHONY : LinkedList.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -165,7 +213,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -173,7 +221,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 priority_queue.obj: priority_queue.cpp.obj
@@ -181,7 +229,7 @@ priority_queue.obj: priority_queue.cpp.obj
 
 # target to build an object file
 priority_queue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/priority_queue.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj
 .PHONY : priority_queue.cpp.obj
 
 priority_queue.i: priority_queue.cpp.i
@@ -189,7 +237,7 @@ priority_queue.i: priority_queue.cpp.i
 
 # target to preprocess a source file
 priority_queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/priority_queue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/priority_queue.cpp.i
 .PHONY : priority_queue.cpp.i
 
 priority_queue.s: priority_queue.cpp.s
@@ -197,7 +245,7 @@ priority_queue.s: priority_queue.cpp.s
 
 # target to generate assembly for a file
 priority_queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FileZipper_Project.dir\build.make CMakeFiles/FileZipper_Project.dir/priority_queue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/priority_queue.cpp.s
 .PHONY : priority_queue.cpp.s
 
 # Help Target
@@ -208,10 +256,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... FileZipper_Project
-	@echo ... huffman.obj
-	@echo ... huffman.i
-	@echo ... huffman.s
+	@echo ... fileZipper_
+	@echo ... FileZipper.obj
+	@echo ... FileZipper.i
+	@echo ... FileZipper.s
+	@echo ... HuffmanTree.obj
+	@echo ... HuffmanTree.i
+	@echo ... HuffmanTree.s
+	@echo ... LinkedList.obj
+	@echo ... LinkedList.i
+	@echo ... LinkedList.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,8 +1,16 @@
 cmake_minimum_required(VERSION 3.29)
-project(FileZipper_Project)
+project(fileZipper_)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(FileZipper_Project main.cpp huffman.cpp
+add_executable(fileZipper_ main.cpp
+        priority_queue.cpp
         priority_queue.h
-        priority_queue.cpp)
+        HuffmanTree.cpp
+        HuffmanTree.h
+        FileZipper.cpp
+        FileZipper.h
+        LinkedList.cpp
+        LinkedList.h
+        main.cpp
+        HuffmanNode.h)

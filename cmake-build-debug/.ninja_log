@@ -1,0 +1,11 @@
+# ninja log v6
+45	1427	7540844298742364	CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj	5bf804b140cebea1
+42	1440	7540856979656761	CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj	85f28280a79bb539
+36	1442	7540856979586674	CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj	5dec3c4e50e1f9d4
+26	1570	7540856979491473	CMakeFiles/fileZipper_.dir/main.cpp.obj	bb47d73d173cdff6
+49	1654	7540856979717229	CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj	de2ee0fe08990172
+1655	1977	7540856995772955	fileZipper_.exe	ff17c68466146fae
+55	1516	7540870728397610	CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj	de2ee0fe08990172
+1517	1883	7540870743010953	fileZipper_.exe	ff17c68466146fae
+5	453	7540880902532805	CMakeFiles/fileZipper_.dir/main.cpp.obj	bb47d73d173cdff6
+453	575	7540880907013190	fileZipper_.exe	ff17c68466146fae

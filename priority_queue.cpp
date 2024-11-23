@@ -1,72 +1,94 @@
+//
+// Created by hp on 11/23/2024.
+//
+
 #include "priority_queue.h"
-#include <iostream>
+#include "HuffmanTree.h"
+#include "HuffmanNode.h"
 using namespace std;
 
-// Constructor for initializing elements
-priority_queue::priority_queue(int size) {
-    maxSize = size;
-    array = new element[maxSize + 1];       // Allocate space for the heap array
-    lastIndex = 0;
-    maxItem.freq = INT_MAX;                 // Initialize the key with INT_MAX
-    maxItem.node = nullptr;                 // Initialize the pointer to nullptr
-    array[0] = maxItem;                     // Place maxItem in the first slot of the array
-}
+priority_queue::priority_queue() {}
 
-// Destructor to release dynamically allocated memory
 priority_queue::~priority_queue() {
-    delete[] array; // Free the allocated memory for the heap array
-    array = nullptr; // Set pointer to nullptr to avoid dangling pointers
-}
-
-// Insert a key-value pair
-void priority_queue::insert(element item) {
-
-    if (lastIndex == maxSize) { // If the heap is full, readjust its size to have space for a new element
-        maxSize += 1;
-        array = static_cast<element*>(realloc(array, (maxSize + 1) * sizeof(element)));
+    for (auto node : heap) {
+        delete node;
     }
-    array[++lastIndex] = item; // Increment the last index and insert the element at the end of the heap
-    upheap(lastIndex);         // Upheap from the last element to maintain the max-heap property
 }
 
-// Remove the top element
-element priority_queue::remove() {
-
-    element temp = array[1];            // Store the top (max) element in the heap
-    array[1] = array[lastIndex--];      // Replace the top element with the last one and adjust the last index
-    downheap(1);                   // Downheap from the top of the heap to maintain its max property
-    return temp;                        // Return the top element
+int priority_queue::parent(int i) {
+  return (i - 1) / 2;
 }
 
-// Upheap operation for maintaining heap property
-void priority_queue::upheap(int index) {
+int priority_queue::left(int i) {
+  return 2 * i + 1;
+}
 
-    element temp = array[index];                    // Store the current element
+int priority_queue::right(int i) {
+  return 2 * i + 2;
+}
 
-    while (array[index / 2].freq < temp.freq) {     // While the current element is greater than its parent, swap them
-        array[index] = array[index / 2];
-        index = index / 2;
+void priority_queue::heapifyUp(int i) {
+    while (i > 0 && heap[i]->freq < heap[parent(i)]->freq) {
+        swap(heap[i], heap[parent(i)]);
+        i = parent(i);
     }
-    array[index] = temp;
 }
 
-// Downheap operation for maintaining heap property
-void priority_queue::downheap(int index) {
+void priority_queue::heapifyDown(int i) {
+    int l = left(i), r = right(i);
+    int smallest = i;
 
-    element temp = array[index];                                // Store the current element
-
-    int i = 2 * index;                                          // Move to the left child of the element
-    for (; i <= lastIndex; i *= 2) {
-        if (i < lastIndex && array[i].freq < array[i + 1].freq) // If the left child is smaller than the right, move to the max (right)
-            i++;
-        if (temp.freq >= array[i].freq)                         // If the current element satisfies max-heap property, do nothing
-            break;
-        array[i / 2] = array[i];                                // If not, swap the current element with its max child
+    if (l < heap.size() && heap[l]->freq < heap[smallest]->freq) {
+        smallest = l;
     }
-    array[i / 2] = temp;
+
+    if (r < heap.size() && heap[r]->freq < heap[smallest]->freq) {
+        smallest = r;
+    }
+
+    if (smallest != i) {
+        swap(heap[i], heap[smallest]);
+        heapifyDown(smallest);
+    }
 }
 
-// Return the current size of the heap
-int priority_queue::size() {
-    return lastIndex;
+
+void priority_queue::insert(HuffmanNode* n) {
+    heap.push_back(n);
+    heapifyUp(heap.size() - 1);
+}
+
+
+HuffmanNode* priority_queue::removeMin() {
+    if (heap.empty())
+        return nullptr;
+
+    HuffmanNode* min = heap[0];
+    heap[0] = heap.back();
+    heap.pop_back();
+    heapifyDown(0);
+    return min;
+}
+
+
+HuffmanNode* priority_queue::getMin() const {
+    if(heap.empty())
+        return nullptr;
+    else
+        return heap[0];
+}
+
+int priority_queue::getSize() const {
+    return heap.size();
+}
+
+bool priority_queue::isEmpty() const {
+    return heap.empty();
+}
+
+void priority_queue::buildHeap(const vector<HuffmanNode*>& nodes) {
+    heap = nodes;
+    for (int i = heap.size() / 2 - 1; i >= 0; --i) {
+        heapifyDown(i);
+    }
 }
