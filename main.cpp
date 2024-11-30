@@ -49,27 +49,27 @@ int main() {
     cout << "The size of the file after compressing is: " << s2 << " bytes" << endl;
     cout << "The efficiency of compression is: " << ((s1-s2)/double(s1)) * 100 << "%" << endl;
 //    // Verify decompression
-//    ifstream originalFile(inputFilename);
-//    ifstream decompressedFile(decompressedFilename);
-//
-//    if (!originalFile || !decompressedFile) {
-//        cerr << "Error: Unable to open one of the files for comparison." << endl;
-//        return 1;
-//    }
+ ifstream originalFile(inputFilename);
+   ifstream decompressedFile(decompressedFilename);
 
-//    string originalContent((istreambuf_iterator<char>(originalFile)),
-//                                (istreambuf_iterator<char>()));
-//    string decompressedContent((istreambuf_iterator<char>(decompressedFile)),
-//                                     (istreambuf_iterator<char>()));
-//
-//    if (originalContent == decompressedContent) {
-//        cout << "Success: Decompressed file matches the original file!" << endl;
-//    } else {
-//        cerr << "Error: Decompressed file does not match the original file." << endl;
-//    }
-//
-//    originalFile.close();
-//    decompressedFile.close();
+    if (!originalFile || !decompressedFile) {
+        cerr << "Error: Unable to open one of the files for comparison." << endl;
+        return 1;
+    }
+
+    string originalContent((istreambuf_iterator<char>(originalFile)),
+                                (istreambuf_iterator<char>()));
+    string decompressedContent((istreambuf_iterator<char>(decompressedFile)),
+                                     (istreambuf_iterator<char>()));
+
+    if (originalContent == decompressedContent) {
+        cout << "Success: Decompressed file matches the original file!" << endl;
+    } else {
+        cerr << "Error: Decompressed file does not match the original file." << endl;
+   }
+
+    originalFile.close();
+    decompressedFile.close();
 
     return 0;
 }

@@ -1,7 +1,3 @@
-//
-// Created by hp on 11/23/2024.
-//
-
 #include "HuffmanTree.h"
 #include "LinkedList.h"
 #include "priority_queue.h"
@@ -25,8 +21,7 @@ void HuffmanTree::buildTree(priority_queue& pq) {
 }
 
 void HuffmanTree::generateCodes(HuffmanNode* node, string str, vector<pair<char, string>>& codes) {
-    if (!node)
-      return;
+    if (!node) return;
 
     if (node->data != '\0') {
         codes.push_back({node->data, str});

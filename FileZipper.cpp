@@ -1,7 +1,3 @@
-//
-// Created by hp on 11/23/2024.
-//
-
 #include "FileZipper.h"
 #include "LinkedList.h"
 #include "HuffmanTree.h"
@@ -26,7 +22,7 @@ void FileZipper::buildFrequencyTable(const string& filename) {
     int charFrequencies[256] = {0};
 
     while (inFile.get(ch)) {
-        charFrequencies[static_cast<char>(ch)]++;
+        charFrequencies[static_cast<unsigned char>(ch)]++;
     }
 
     inFile.close();
@@ -37,6 +33,8 @@ void FileZipper::buildFrequencyTable(const string& filename) {
         }
     }
 }
+
+
 
 void FileZipper::buildHuffmanCodes(HuffmanNode* root, const string& code) {
     if (!root) return;
@@ -66,10 +64,10 @@ void FileZipper::compress(const string& inputFilename, const string& compressedF
     HuffmanTree huffmanTree;
     huffmanTree.buildTree(pq);
 
-    //Generate Huffman codes
+    // Generate Huffman codes
     buildHuffmanCodes(huffmanTree.getRoot(), "");
 
-    //Write compressed data to file
+    // Write compressed data to file
     ifstream inFile(inputFilename, ios::binary);
     ofstream outFile(compressedFilename, ios::binary);
 
@@ -81,14 +79,17 @@ void FileZipper::compress(const string& inputFilename, const string& compressedF
     string bitString;
     char ch;
     while (inFile.get(ch)) {
-        bitString += codes.find(static_cast<char>(ch));
+        bitString += codes.find(static_cast<unsigned char>(ch));
     }
 
-    // Pad bitString to make it a multiple of 8
-    while (bitString.size() % 8 != 0) {
-        bitString += "0";
+    // Calculate padding and write it to the file
+    int paddingBits = 8 - (bitString.size() % 8);
+    if (paddingBits != 8) {
+        bitString.append(paddingBits, '0');
     }
+    outFile.put(static_cast<char>(paddingBits)); // Store padding bits at the start
 
+    // Write compressed data
     for (size_t i = 0; i < bitString.size(); i += 8) {
         bitset<8> byte(bitString.substr(i, 8));
         outFile.put(static_cast<char>(byte.to_ulong()));
@@ -107,12 +108,20 @@ void FileZipper::decompress(const string& compressedFilename, const string& outp
         return;
     }
 
+    // Read padding bits
+    char paddingBitsChar;
+    inFile.get(paddingBitsChar);
+    int paddingBits = static_cast<int>(paddingBitsChar);
+
     string bitString;
     char byte;
 
     while (inFile.get(byte)) {
-        bitString += bitset<8>(static_cast<char>(byte)).to_string();
+        bitString += bitset<8>(static_cast<unsigned char>(byte)).to_string();
     }
+
+    // Remove padding bits from the bitstring
+    bitString = bitString.substr(0, bitString.size() - paddingBits);
 
     HuffmanTree huffmanTree;
     huffmanTree.decodeTree(frequencies);

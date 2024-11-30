@@ -13,4 +13,5 @@ add_executable(fileZipper_ main.cpp
         LinkedList.cpp
         LinkedList.h
         main.cpp
-        HuffmanNode.h)
+        HuffmanNode.h
+)
