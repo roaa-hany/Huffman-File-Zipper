@@ -1,27 +1,33 @@
-//
-// Created by hp on 11/23/2024.
-//
-
 #ifndef FILEZIPPER_H
 #define FILEZIPPER_H
 
 #include <string>
-#include "HuffmanTree.h"
-#include "priority_queue.h"
 #include "LinkedList.h"
+#include "HuffmanNode.h"
 
+// FileZipper class
 class FileZipper {
-private:
-    LinkedList frequencies; // Linked list to store character frequencies
-    LinkedList codes;       // Linked list to store Huffman codes
-
-    void buildFrequencyTable(const string& filename);
-    void buildHuffmanCodes(HuffmanNode* root, const string& code);
-
 public:
     FileZipper();
-    void compress(const string& inputFilename, const string& compressedFilename);
-    void decompress(const string& compressedFilename, const string& outputFilename);
+
+    // Compresses the input file, encrypts it, and writes to the output file
+    void compress(const std::string& inputFilename, const std::string& compressedFilename);
+
+    // Decrypts the file, decompresses it, and writes to the output file
+    void decompress(const std::string& compressedFilename, const std::string& outputFilename);
+
+private:
+    // Encrypts or decrypts data in a file using XOR encryption
+    void encryptDecryptFile(const std::string& filename);
+
+    // Builds the frequency table from the input file
+    void buildFrequencyTable(const std::string& filename);
+
+    // Builds the Huffman codes from the Huffman tree
+    void buildHuffmanCodes(HuffmanNode* root, const std::string& code);
+
+    LinkedList frequencies; // Stores the frequency table as a linked list
+    LinkedList codes;       // Stores the Huffman codes as a linked list
 };
 
 #endif // FILEZIPPER_H
