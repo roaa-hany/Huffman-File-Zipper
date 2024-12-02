@@ -128,6 +128,19 @@ fileZipper_/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/build
 .PHONY : fileZipper_/fast
 
+#=============================================================================
+# Target rules for targets named Code_lib_run
+
+# Build rule for target.
+Code_lib_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib_run
+.PHONY : Code_lib_run
+
+# fast build rule for target.
+Code_lib_run/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/build
+.PHONY : Code_lib_run/fast
+
 FileZipper.obj: FileZipper.cpp.obj
 .PHONY : FileZipper.obj
 
@@ -151,6 +164,30 @@ FileZipper.s: FileZipper.cpp.s
 FileZipper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/FileZipper.cpp.s
 .PHONY : FileZipper.cpp.s
+
+Google_tests/test_filezipper.obj: Google_tests/test_filezipper.cpp.obj
+.PHONY : Google_tests/test_filezipper.obj
+
+# target to build an object file
+Google_tests/test_filezipper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/Google_tests/test_filezipper.cpp.obj
+.PHONY : Google_tests/test_filezipper.cpp.obj
+
+Google_tests/test_filezipper.i: Google_tests/test_filezipper.cpp.i
+.PHONY : Google_tests/test_filezipper.i
+
+# target to preprocess a source file
+Google_tests/test_filezipper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/Google_tests/test_filezipper.cpp.i
+.PHONY : Google_tests/test_filezipper.cpp.i
+
+Google_tests/test_filezipper.s: Google_tests/test_filezipper.cpp.s
+.PHONY : Google_tests/test_filezipper.s
+
+# target to generate assembly for a file
+Google_tests/test_filezipper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/Google_tests/test_filezipper.cpp.s
+.PHONY : Google_tests/test_filezipper.cpp.s
 
 HuffmanTree.obj: HuffmanTree.cpp.obj
 .PHONY : HuffmanTree.obj
@@ -206,6 +243,7 @@ main.obj: main.cpp.obj
 # target to build an object file
 main.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -214,6 +252,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -222,6 +261,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 priority_queue.obj: priority_queue.cpp.obj
@@ -256,10 +296,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Code_lib_run
 	@echo ... fileZipper_
 	@echo ... FileZipper.obj
 	@echo ... FileZipper.i
 	@echo ... FileZipper.s
+	@echo ... Google_tests/test_filezipper.obj
+	@echo ... Google_tests/test_filezipper.i
+	@echo ... Google_tests/test_filezipper.s
 	@echo ... HuffmanTree.obj
 	@echo ... HuffmanTree.i
 	@echo ... HuffmanTree.s

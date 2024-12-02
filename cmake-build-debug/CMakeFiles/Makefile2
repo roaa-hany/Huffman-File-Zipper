@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project
 
 # The main recursive "all" target.
 all: CMakeFiles/fileZipper_.dir/all
+all: CMakeFiles/Code_lib_run.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,6 +72,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/fileZipper_.dir/clean
+clean: CMakeFiles/Code_lib_run.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -80,7 +82,7 @@ clean: CMakeFiles/fileZipper_.dir/clean
 CMakeFiles/fileZipper_.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target fileZipper_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9 "Built target fileZipper_"
 .PHONY : CMakeFiles/fileZipper_.dir/all
 
 # Build rule for subdir invocation for target.
@@ -98,6 +100,32 @@ fileZipper_: CMakeFiles/fileZipper_.dir/rule
 CMakeFiles/fileZipper_.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileZipper_.dir\build.make CMakeFiles/fileZipper_.dir/clean
 .PHONY : CMakeFiles/fileZipper_.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Code_lib_run.dir
+
+# All Build rule for target.
+CMakeFiles/Code_lib_run.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Code_lib_run"
+.PHONY : CMakeFiles/Code_lib_run.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Code_lib_run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Code_lib_run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Code_lib_run.dir/rule
+
+# Convenience name for target.
+Code_lib_run: CMakeFiles/Code_lib_run.dir/rule
+.PHONY : Code_lib_run
+
+# clean rule for target.
+CMakeFiles/Code_lib_run.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code_lib_run.dir\build.make CMakeFiles/Code_lib_run.dir/clean
+.PHONY : CMakeFiles/Code_lib_run.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

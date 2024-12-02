@@ -15,3 +15,8 @@ add_executable(fileZipper_ main.cpp
         main.cpp
         HuffmanNode.h
 )
+set(SOURCE_FILES main.cpp
+        Google_tests/test_filezipper.cpp)
+add_executable(Code_lib_run ${SOURCE_FILES}
+        Google_tests/test_filezipper.cpp)
+
