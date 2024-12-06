@@ -4,6 +4,7 @@
 #include "HuffmanNode.h"
 #include <vector>
 
+using namespace std;
 // HuffmanTree class implementation
 HuffmanTree::HuffmanTree() : root(nullptr) {}
 
@@ -42,7 +43,7 @@ void HuffmanTree::decodeTree(const LinkedList& frequencies) {
     Node* current = frequencies.getHead(); // Assume LinkedList has a getHead() method
     while (current) {
         char character = current->key;
-        int frequency = std::stoi(current->value); // Convert stored string value to integer
+        int frequency = stoi(current->value); // Convert stored string value to integer
         pq.insert(new HuffmanNode(character, frequency));
         current = current->next;
     }
