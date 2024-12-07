@@ -5,7 +5,7 @@
 #include "LinkedList.h"
 #include "HuffmanNode.h"
 using namespace std;
-// FileZipper class
+
 class FileZipper {
 public:
     FileZipper();
