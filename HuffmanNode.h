@@ -5,7 +5,7 @@
 #ifndef HUFFMANNODE_H
 #define HUFFMANNODE_H
 
-// Node structure for Huffman tree
+
 struct HuffmanNode {
 public:
     char data;       // The character stored at this node
@@ -13,10 +13,20 @@ public:
     HuffmanNode* left;
     HuffmanNode* right;
 
-    HuffmanNode(char data, int freq) : data(data), freq(freq), left(nullptr), right(nullptr) {}
-    HuffmanNode(char data, int freq, HuffmanNode* l, HuffmanNode* r) : data(data), freq(freq), left(l), right(r) {}
+    HuffmanNode(char d, int f) {
+        data = d;
+        freq = f;
+        left = nullptr;
+        right = nullptr;
+    }
+    HuffmanNode(char d, int f, HuffmanNode* l, HuffmanNode* r) {
+        data = d;
+        freq = f;
+        left = l;
+        right = r;
+    }
 
-    // Compare function for priority queue
+    // Overloading the compare operator for priority queue insertion
     bool operator>(const HuffmanNode& other) const {
         return freq > other.freq;
     }
