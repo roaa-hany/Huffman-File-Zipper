@@ -6,8 +6,6 @@
 #include <iostream>
 #include <fstream>
 #include <bitset>
-#include <sstream>
-#include <stdexcept>
 using namespace std;
 
 // Encryption key used for XOR-based encryption/decryption
@@ -165,7 +163,8 @@ void FileZipper::decompress(const string& compressedFilename, const string& outp
     // Read padding bits from the compressed file
     char paddingBitsChar;
     inFile.get(paddingBitsChar);
-    int paddingBits = static_cast<int>(paddingBitsChar);
+
+    int paddingBits = paddingBitsChar;
 
     string bitString;
     char byte;
@@ -178,7 +177,8 @@ void FileZipper::decompress(const string& compressedFilename, const string& outp
     // Remove padding bits from the bitstring
     if (paddingBits > 0 && paddingBits <= 8) {
         bitString = bitString.substr(0, bitString.size() - paddingBits);
-    } else {
+    }
+    else {
         cerr << "Error: Invalid padding bits value." << endl;
         return;
     }
