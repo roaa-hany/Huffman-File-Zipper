@@ -11,7 +11,6 @@
 #include <vector>
 #include <string>
 
-// Huffman Tree class
 class HuffmanTree {
 private:
     HuffmanNode* root;
