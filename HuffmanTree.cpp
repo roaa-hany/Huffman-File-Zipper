@@ -6,10 +6,10 @@
 
 using namespace std;
 
-// HuffmanTree class implementation
-
 // Constructor initializes the root pointer to null
-HuffmanTree::HuffmanTree() : root(nullptr) {}
+HuffmanTree::HuffmanTree(){
+    root = nullptr;
+}
 
 // Function to build the Huffman tree from a priority queue
 // The priority queue contains nodes with characters and their frequencies
