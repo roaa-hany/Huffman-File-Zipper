@@ -28,9 +28,9 @@ public:
 
     void insert(HuffmanNode* node);
     HuffmanNode* removeMin();
-    HuffmanNode* getMin() const;
-    int getSize() const;
-    bool isEmpty() const;
+    HuffmanNode* getMin();
+    int getSize();
+    bool isEmpty();
     void buildHeap(const vector<HuffmanNode*>& nodes);
 };
 
