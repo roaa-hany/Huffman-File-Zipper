@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/acer/OneDrive/Dokumente/GitHub/fall2024-term-project-zippers/Google_tests/test_filezipper.cpp" "CMakeFiles/Code_lib_run.dir/Google_tests/test_filezipper.cpp.obj" "gcc" "CMakeFiles/Code_lib_run.dir/Google_tests/test_filezipper.cpp.obj.d"
-  "C:/Users/acer/OneDrive/Dokumente/GitHub/fall2024-term-project-zippers/main.cpp" "CMakeFiles/Code_lib_run.dir/main.cpp.obj" "gcc" "CMakeFiles/Code_lib_run.dir/main.cpp.obj.d"
+  "C:/Users/Sama/OneDrive/Documents/GitHub/fall2024-term-project-zippers/Google_tests/test_filezipper.cpp" "CMakeFiles/Code_lib_run.dir/Google_tests/test_filezipper.cpp.obj" "gcc" "CMakeFiles/Code_lib_run.dir/Google_tests/test_filezipper.cpp.obj.d"
+  "C:/Users/Sama/OneDrive/Documents/GitHub/fall2024-term-project-zippers/main.cpp" "CMakeFiles/Code_lib_run.dir/main.cpp.obj" "gcc" "CMakeFiles/Code_lib_run.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

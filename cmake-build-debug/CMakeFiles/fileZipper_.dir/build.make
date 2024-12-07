@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Sama\AppData\Local\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Users\Sama\AppData\Local\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers
+CMAKE_SOURCE_DIR = C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fileZipper_.dir/depend.make
@@ -69,74 +69,74 @@ include CMakeFiles/fileZipper_.dir/progress.make
 include CMakeFiles/fileZipper_.dir/flags.make
 
 CMakeFiles/fileZipper_.dir/main.cpp.obj: CMakeFiles/fileZipper_.dir/flags.make
-CMakeFiles/fileZipper_.dir/main.cpp.obj: C:/Users/acer/OneDrive/Dokumente/GitHub/fall2024-term-project-zippers/main.cpp
+CMakeFiles/fileZipper_.dir/main.cpp.obj: C:/Users/Sama/OneDrive/Documents/GitHub/fall2024-term-project-zippers/main.cpp
 CMakeFiles/fileZipper_.dir/main.cpp.obj: CMakeFiles/fileZipper_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fileZipper_.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/main.cpp.obj -MF CMakeFiles\fileZipper_.dir\main.cpp.obj.d -o CMakeFiles\fileZipper_.dir\main.cpp.obj -c C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fileZipper_.dir/main.cpp.obj"
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/main.cpp.obj -MF CMakeFiles\fileZipper_.dir\main.cpp.obj.d -o CMakeFiles\fileZipper_.dir\main.cpp.obj -c C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\main.cpp
 
 CMakeFiles/fileZipper_.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fileZipper_.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\main.cpp > CMakeFiles\fileZipper_.dir\main.cpp.i
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\main.cpp > CMakeFiles\fileZipper_.dir\main.cpp.i
 
 CMakeFiles/fileZipper_.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileZipper_.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\main.cpp -o CMakeFiles\fileZipper_.dir\main.cpp.s
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\main.cpp -o CMakeFiles\fileZipper_.dir\main.cpp.s
 
 CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj: CMakeFiles/fileZipper_.dir/flags.make
-CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj: C:/Users/acer/OneDrive/Dokumente/GitHub/fall2024-term-project-zippers/priority_queue.cpp
+CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj: C:/Users/Sama/OneDrive/Documents/GitHub/fall2024-term-project-zippers/priority_queue.cpp
 CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj: CMakeFiles/fileZipper_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj -MF CMakeFiles\fileZipper_.dir\priority_queue.cpp.obj.d -o CMakeFiles\fileZipper_.dir\priority_queue.cpp.obj -c C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\priority_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj"
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/priority_queue.cpp.obj -MF CMakeFiles\fileZipper_.dir\priority_queue.cpp.obj.d -o CMakeFiles\fileZipper_.dir\priority_queue.cpp.obj -c C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\priority_queue.cpp
 
 CMakeFiles/fileZipper_.dir/priority_queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fileZipper_.dir/priority_queue.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\priority_queue.cpp > CMakeFiles\fileZipper_.dir\priority_queue.cpp.i
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\priority_queue.cpp > CMakeFiles\fileZipper_.dir\priority_queue.cpp.i
 
 CMakeFiles/fileZipper_.dir/priority_queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileZipper_.dir/priority_queue.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\priority_queue.cpp -o CMakeFiles\fileZipper_.dir\priority_queue.cpp.s
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\priority_queue.cpp -o CMakeFiles\fileZipper_.dir\priority_queue.cpp.s
 
 CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj: CMakeFiles/fileZipper_.dir/flags.make
-CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj: C:/Users/acer/OneDrive/Dokumente/GitHub/fall2024-term-project-zippers/HuffmanTree.cpp
+CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj: C:/Users/Sama/OneDrive/Documents/GitHub/fall2024-term-project-zippers/HuffmanTree.cpp
 CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj: CMakeFiles/fileZipper_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj -MF CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.obj.d -o CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.obj -c C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\HuffmanTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj"
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.obj -MF CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.obj.d -o CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.obj -c C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\HuffmanTree.cpp
 
 CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\HuffmanTree.cpp > CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.i
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\HuffmanTree.cpp > CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.i
 
 CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileZipper_.dir/HuffmanTree.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\HuffmanTree.cpp -o CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.s
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\HuffmanTree.cpp -o CMakeFiles\fileZipper_.dir\HuffmanTree.cpp.s
 
 CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj: CMakeFiles/fileZipper_.dir/flags.make
-CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj: C:/Users/acer/OneDrive/Dokumente/GitHub/fall2024-term-project-zippers/FileZipper.cpp
+CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj: C:/Users/Sama/OneDrive/Documents/GitHub/fall2024-term-project-zippers/FileZipper.cpp
 CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj: CMakeFiles/fileZipper_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj -MF CMakeFiles\fileZipper_.dir\FileZipper.cpp.obj.d -o CMakeFiles\fileZipper_.dir\FileZipper.cpp.obj -c C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\FileZipper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj"
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/FileZipper.cpp.obj -MF CMakeFiles\fileZipper_.dir\FileZipper.cpp.obj.d -o CMakeFiles\fileZipper_.dir\FileZipper.cpp.obj -c C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\FileZipper.cpp
 
 CMakeFiles/fileZipper_.dir/FileZipper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fileZipper_.dir/FileZipper.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\FileZipper.cpp > CMakeFiles\fileZipper_.dir\FileZipper.cpp.i
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\FileZipper.cpp > CMakeFiles\fileZipper_.dir\FileZipper.cpp.i
 
 CMakeFiles/fileZipper_.dir/FileZipper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileZipper_.dir/FileZipper.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\FileZipper.cpp -o CMakeFiles\fileZipper_.dir\FileZipper.cpp.s
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\FileZipper.cpp -o CMakeFiles\fileZipper_.dir\FileZipper.cpp.s
 
 CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj: CMakeFiles/fileZipper_.dir/flags.make
-CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj: C:/Users/acer/OneDrive/Dokumente/GitHub/fall2024-term-project-zippers/LinkedList.cpp
+CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj: C:/Users/Sama/OneDrive/Documents/GitHub/fall2024-term-project-zippers/LinkedList.cpp
 CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj: CMakeFiles/fileZipper_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj -MF CMakeFiles\fileZipper_.dir\LinkedList.cpp.obj.d -o CMakeFiles\fileZipper_.dir\LinkedList.cpp.obj -c C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\LinkedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj"
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileZipper_.dir/LinkedList.cpp.obj -MF CMakeFiles\fileZipper_.dir\LinkedList.cpp.obj.d -o CMakeFiles\fileZipper_.dir\LinkedList.cpp.obj -c C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\LinkedList.cpp
 
 CMakeFiles/fileZipper_.dir/LinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fileZipper_.dir/LinkedList.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\LinkedList.cpp > CMakeFiles\fileZipper_.dir\LinkedList.cpp.i
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\LinkedList.cpp > CMakeFiles\fileZipper_.dir\LinkedList.cpp.i
 
 CMakeFiles/fileZipper_.dir/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileZipper_.dir/LinkedList.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\LinkedList.cpp -o CMakeFiles\fileZipper_.dir\LinkedList.cpp.s
+	C:\Users\Sama\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\LinkedList.cpp -o CMakeFiles\fileZipper_.dir\LinkedList.cpp.s
 
 # Object files for target fileZipper_
 fileZipper__OBJECTS = \
@@ -158,7 +158,7 @@ fileZipper_.exe: CMakeFiles/fileZipper_.dir/build.make
 fileZipper_.exe: CMakeFiles/fileZipper_.dir/linkLibs.rsp
 fileZipper_.exe: CMakeFiles/fileZipper_.dir/objects1.rsp
 fileZipper_.exe: CMakeFiles/fileZipper_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable fileZipper_.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable fileZipper_.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\fileZipper_.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -170,6 +170,6 @@ CMakeFiles/fileZipper_.dir/clean:
 .PHONY : CMakeFiles/fileZipper_.dir/clean
 
 CMakeFiles/fileZipper_.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug C:\Users\acer\OneDrive\Dokumente\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles\fileZipper_.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug C:\Users\Sama\OneDrive\Documents\GitHub\fall2024-term-project-zippers\cmake-build-debug\CMakeFiles\fileZipper_.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/fileZipper_.dir/depend
 
