@@ -127,4 +127,73 @@ TEST(FileZipperTest, CompressionEfficiency) {
     std::remove(compressedFilename.c_str());
 }
 
+// Test case for handling corrupted compressed files
+TEST(FileZipperTest, CorruptedCompressedFile) {
+    // Arrange: Create a sample input file
+    std::string inputFilename = "corrupt_input.txt";
+    std::string compressedFilename = "corrupt_compressed.bin";
+    std::string decompressedFilename = "corrupt_decompressed.txt";
+
+    std::string inputContent = "This file will be corrupted.";
+    writeToFile(inputFilename, inputContent);
+
+    FileZipper fileZipper;
+
+    // Compress the file
+    fileZipper.compress(inputFilename, compressedFilename);
+
+    // Corrupt the compressed file
+    std::fstream compressedFile(compressedFilename, std::ios::in | std::ios::out | std::ios::binary);
+    if (compressedFile) {
+        compressedFile.seekp(5); // Corrupt a specific byte
+        compressedFile.put('\xFF');
+    }
+    compressedFile.close();
+
+    // Act & Assert: Decompression should handle the corrupted file gracefully
+    EXPECT_THROW(fileZipper.decompress(compressedFilename, decompressedFilename), std::runtime_error);
+
+    // Cleanup: Remove test files
+    std::remove(inputFilename.c_str());
+    std::remove(compressedFilename.c_str());
+    std::remove(decompressedFilename.c_str());
+}
+
+// Test case for files with special characters and Unicode
+TEST(FileZipperTest, SpecialCharactersAndUnicode) {
+    // Arrange: Create a file with special characters and Unicode
+    std::string inputFilename = "special_unicode_input.txt";
+    std::string compressedFilename = "special_unicode_compressed.bin";
+    std::string decompressedFilename = "special_unicode_decompressed.txt";
+
+    std::string inputContent = "Special chars: !@#$%^&*() and Unicode: 你好，世界！";
+    writeToFile(inputFilename, inputContent);
+
+    FileZipper fileZipper;
+
+    // Act: Compress and decompress the file
+    fileZipper.compress(inputFilename, compressedFilename);
+    fileZipper.decompress(compressedFilename, decompressedFilename);
+
+    // Assert: Verify that the decompressed file matches the original content
+    std::ifstream decompressedFile(decompressedFilename);
+    std::string decompressedContent((std::istreambuf_iterator<char>(decompressedFile)),
+                                     (std::istreambuf_iterator<char>()));
+
+    EXPECT_EQ(inputContent, decompressedContent);
+
+    // Cleanup: Remove test files
+    std::remove(inputFilename.c_str());
+    std::remove(compressedFilename.c_str());
+    std::remove(decompressedFilename.c_str());
+}
+
+// Test case for invalid file paths
+TEST(FileZipperTest, InvalidFilePaths) {
+    FileZipper fileZipper;
+
+    // Act & Assert: Expect exceptions for invalid file paths
+    EXPECT_THROW(fileZipper.compress("nonexistent_input.txt", "output.bin"), std::runtime_error);
+    EXPECT_THROW(fileZipper.decompress("nonexistent_compressed.bin", "output.txt"), std::runtime_error);
+}
 
