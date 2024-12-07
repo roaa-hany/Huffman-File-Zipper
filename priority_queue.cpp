@@ -84,7 +84,7 @@ HuffmanNode* priority_queue::removeMin() {
 }
 
 // Returns the node with the smallest frequency without removing it
-HuffmanNode* priority_queue::getMin() const {
+HuffmanNode* priority_queue::getMin() {
     if(heap.empty()) {
         return nullptr;  // If heap is empty, return null
     } else {
@@ -93,12 +93,12 @@ HuffmanNode* priority_queue::getMin() const {
 }
 
 // Returns the number of nodes in the heap
-int priority_queue::getSize() const {
+int priority_queue::getSize() {
     return heap.size();  // Return the size of the heap
 }
 
 // Returns whether the heap is empty
-bool priority_queue::isEmpty() const {
+bool priority_queue::isEmpty() {
     return heap.empty();  // Return true if heap is empty
 }
 
